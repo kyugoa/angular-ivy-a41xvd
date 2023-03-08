@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CurrencyMaskModule } from "ng2-currency-mask";
 
 import '@abgov/web-components';
+
 import { AppRoutingModule } from './app.routing';
 
 @NgModule({
