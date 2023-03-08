@@ -41,6 +41,8 @@
   </div>
 
   <div class="flex-row">
+  <input currencyMask [(ngModel)]="value" [options]="{ prefix: '$ ', thousands: ',', decimal: '.', precision:0 }" />
+  <goa-input name="input" prefix="$"></goa-input>
   </div>
 
 </div>

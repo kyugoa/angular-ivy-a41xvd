@@ -7,6 +7,6 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-  
+  value: number = 0;
   constructor() {}
 }
