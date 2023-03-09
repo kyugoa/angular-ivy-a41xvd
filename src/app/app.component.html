@@ -5,44 +5,9 @@
 
 <div class="container">
  
-  <div class="flex-row">
-    <!--LTO Office-->
-    <div class="flex-left">
-      <goa-form-item name="ltoOffice" label="LTO Office" optional="false">
-        <goa-radio-group name="office" orientation="vertical">
-          <goa-radio-item
-            name="office"
-            label="Calgary"
-            value="CAL"
-          ></goa-radio-item>
-          <goa-radio-item
-            name="office"
-            label="Edmonton"
-            value="EDM"
-          ></goa-radio-item>
-        </goa-radio-group>
-      </goa-form-item>
-    </div>
-
-    <!--LTO Rejection-->
-    <div class="flex-right">
-      <goa-form-item name="ltoRejecting" label="Conditions" optional="true">
-        <goa-checkbox name="ltoRejecting" text="LTO examiner is rejecting">
-        </goa-checkbox>
-        <goa-checkbox name="esubmission" text="Electronic submission">
-        </goa-checkbox>
-        <goa-checkbox
-          name="containsForeignParties"
-          text="Contains foreign parties"
-        >
-        </goa-checkbox>
-      </goa-form-item>
-    </div>
-  </div>
-
-  <div class="flex-row">
+   <div class="flex-row">
   <input currencyMask [(ngModel)]="value" [options]="{ prefix: '$ ', thousands: ',', decimal: '.', precision:0 }" />
-  <goa-input name="input" prefix="$"></goa-input>
+  <goa-input name="input" prefix="$" currencyMask [(ngModel)]="value" [options]="{ prefix: '', thousands: ',', decimal: '.', precision:0 }"></goa-input>
   </div>
 
 </div>
